@@ -8,7 +8,11 @@
 
   <!-- load the controllers -->
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+<<<<<<< HEAD
     output="screen" ns="/leg" args="joint_state_controller joint_trajectory_controller"/>
+=======
+    output="screen" ns="/leg" args="joint_state_controller"/>
+>>>>>>> 239af8f62c04f990e6a66a3403a55471ff4004e9
 
   <!-- convert joint states to TF transforms for rviz, etc -->
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
