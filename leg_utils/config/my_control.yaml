@@ -12,6 +12,24 @@ leg:
       - Revolute_4
       - Revolute_5
     gains:
-      Revolute_3: {p: 500.0, d: 0.0, i: 0.0, i_clamp: 0.0}
-      Revolute_4: {p: 500.0, d: 0.0, i: 0.0, i_clamp: 0.0}
-      Revolute_5: {p: 500.0, d: 0.0, i: 0.0, i_clamp: 0.0}
+      Revolute_3: {p: 800.0, d: 0.0, i: 0.0, i_clamp: 0.0}
+      Revolute_4: {p: 800.0, d: 0.0, i: 0.0, i_clamp: 0.0}
+      Revolute_5: {p: 800.0, d: 0.0, i: 0.0, i_clamp: 0.0}
+
+planer:
+  stages:
+    - stance
+    - push_down
+    - move_up
+  stage_duration: # sec
+    stance: 1
+    push_down: 0.2
+    move_up: 0.2
+  stage_position: # xyz meters from origin
+    stance: [0,0.1,-0.2]
+    push_down: [0,0.1,-0.30]
+    move_up: [0,0.1,-0.15]
+  stage_order: # from stage -> to stage
+    stance: push_down
+    push_down: move_up
+    move_up: push_down
