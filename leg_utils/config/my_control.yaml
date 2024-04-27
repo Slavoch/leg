@@ -8,13 +8,13 @@ leg:
   joint_trajectory_controller:
     type: effort_controllers/JointTrajectoryController
     joints:
-      - Revolute_3
       - Revolute_4
-      - Revolute_5
+      - Revolute_6
+      - Revolute_8
     gains:
-      Revolute_3: {p: 800.0, d: 0.0, i: 0.0, i_clamp: 0.0}
       Revolute_4: {p: 800.0, d: 0.0, i: 0.0, i_clamp: 0.0}
-      Revolute_5: {p: 800.0, d: 0.0, i: 0.0, i_clamp: 0.0}
+      Revolute_6: {p: 800.0, d: 0.0, i: 0.0, i_clamp: 0.0}
+      Revolute_8: {p: 800.0, d: 0.0, i: 0.0, i_clamp: 0.0}
 
 planer:
   stages:

@@ -13,7 +13,7 @@ class Controller:
 
     def start_plan(self):
         self.jt = JointTrajectory()
-        self.jt.joint_names = ["Revolute_3", "Revolute_4", "Revolute_5"]
+        self.jt.joint_names = ["Revolute_4", "Revolute_6", "Revolute_8"]
 
     def set_current_angles(self, angles):
         self.current_angles = angles
